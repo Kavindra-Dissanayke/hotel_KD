@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Great+Vibes&family=Lato:ital@0;1&family=Roboto:ital,wght@1,500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:ital@1&family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu', sans-serif;
+}
+body{
+    overflow: auto;
+}
+body::-webkit-scrollbar{
+    width: 10px
+
+
+}body::-webkit-scrollbar-track{
+     background-color: lightsteelblue;
+
+ }body::-webkit-scrollbar-thumb{
+      border-radius: 5px;
+      background-color: #B8860B;
+
+  }
+/* social style*/
+
+.social-outer{
+    width: 50px;
+    height: 150px;
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.social-inner-wrap{
+    flex: 1;
+    position: relative;
+}
+.slide-context{
+    background-color:  #0F172B;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+}
+.social-inner-wrap:hover>.slide-context{
+    right: 49px;
+}
+.social-logo{
+    width: 100%;
+    height: 100%;
+    background-color: #0F172B;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-logo:hover{
+    background-color:#B8860B;
+    color: #0F172B;
+}
+.slide-context{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 100%;
+}
+/* social style*/
+
+.main-slider-outer{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/008/009/823/large_2x/luxury-sunset-over-infinity-pool-in-a-summer-beachfront-hotel-resort-at-tropical-landscape-tranquil-beach-holiday-vacation-background-mood-amazing-island-sunset-beach-view-palms-swimming-pool-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/*nav Styles*/
+.nav-outer{
+    width: 100%;
+    height: 90px;
+    background-color: #0F172B;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.logo-outer{
+    /* border: 1px solid red;*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    border-radius: 100%;
+
+}
+.logo-outer>img{
+    width: 70px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.nav-bar-context{
+    /* border: 1px solid red;*/
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo-outer> img{
+    height: 50px;
+    /*border: 1px solid red;*/
+}
+/*nav*/
+.nav{
+    list-style: none;
+    display: flex;
+
+}
+.nav>li>span>a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav>li{
+    /*margin: 0px 10px;*/
+    border-right: 1px solid #dfe6e9;
+    padding: 5px 15px;
+    border-bottom: 2px solid transparent;
+    transition: 1s ease-in-out;
+}
+.nav>li:last-child{
+    /* border: none;*/
+    border-right: 0;
+    padding-right: 0;
+}
+/*.nav>li{
+    border: 1px solid red;
+}*/
+.nav>li:hover{
+    cursor:pointer;
+    border-bottom: 2px solid white;
+}
+.nav>li:hover>span>a{
+    color: #B8860B;
+}
+.book-button{
+    padding: 8px 15px;
+    background: none;
+    margin: 0px 20px;
+    border: 1px solid  #B8860B;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.book-button:hover{
+    background:  #B8860B;
+    color: white;
+}
+/*nav*/
+/*search style*/
+.search-wrapper{
+    width: 340px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+.search-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background-color:   #B8860B;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-wrapper>input[type=search]{
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 0px 15px;
+}
+.search-icon{
+    width: 50px;
+    height: 100%;
+    background-color:  #B8860B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.search-wrapper>input[type=search]:focus{
+    outline: none;
+}
+/*search style*/
+/*middle text style*/
+
+.middle-text-outer{
+    width: 100%;
+    height: 250px;
+}
+.book-today-text{
+    text-align: center;
+    font-weight: bold;
+    margin-top:35px ;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+
+}
+.weekend-offer-text{
+    font-family:'ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+
+}
+/*middle text style*/
+/*  booking widget styel*/
+.widget-main-outer{
+    width: 100%;
+    height: 70px;
+    margin-top:50px ;
+
+}
+.widget-inner{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #3A4D7C;
+
+
+}
+.widget-component-wrapper:first-child{
+    width: 40%;
+
+}
+.widget-component-wrapper>input[type=date],
+.widget-component-wrapper>select:focus
+{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #3A4D7C;
+}
+.widget-component-wrapper>select{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #3A4D7C;
+}
+.widget-component-wrapper>input[type=date]:focus{
+    outline: none;
+}
+.widget-component-wrapper>input[type=submit]{
+    flex: 1;
+    border: none;
+    background-color:  #B8860B;
+    color: white;
+    font-size: 17px;
+}
+.widget-component-wrapper>input[type=submit]:hover{
+    background-color:#0F172B ;
+    cursor: pointer;
+    color: white;
+}
+.widget-component-wrapper{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+/*  booking widget style*/
+/*nav Styles*/
+.about-wrapper{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.about-inner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.about-inner:first-child{
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+
+}
+.about-inner>img{
+    background-repeat: no-repeat;
+    background-size:  cover;
+    border-radius: 50%;
+}
+.about-inner>p{
+    font-size: 17px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 8px;
+    line-height: 30px;
+    text-align: justify;
+}
+.welcome-text{
+    font-size: 80px;
+    color: brown;
+    padding: 0 30px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+}
+.enjoy-text{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -38px;
+
+}
+.about-text-outer{
+    padding-top: 80px;
+}
+.services-main-outer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.services-inner{
+    flex: 1;
+    background-position: center;
+}
+.services-inner:hover{
+    cursor: pointer;
+    margin-top: -35px;
+    transition: 0.5s ease-in-out;
+}
+.services-inner:first-child{
+    background-image: url("https://img.freepik.com/free-photo/pillow-bed-with-light-lamp_74190-6066.jpg?size=338&ext=jpg&ga=GA1.2.1558776660.1664949084");
+    background-repeat: no-repeat;
+    background-size:  cover;
+
+}
+.services-inner:nth-child(2){
+    background-image: url("https://img.freepik.com/free-photo/morning-coffee-metal-tray_658428-50.jpg?size=338&ext=jpg&ga=GA1.2.1558776660.1664949084");
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+.services-inner:nth-child(3){
+    background-image: url("https://img.freepik.com/premium-photo/hotel-breakfast-bar-with-tables_271000-115.jpg?size=338&ext=jpg&ga=GA1.2.1558776660.1664949084");
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+.services-inner:last-child{
+    background-image: url("https://t3.ftcdn.net/jpg/05/15/20/24/240_F_515202498_jhsDCaPAsu4ccrc8LF9bb2kFdn2ez7AF.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+.shadow-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(15, 23, 43,0.35);
+}
+.show-wrapper{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Hidden-wrapper{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: none;
+}
+.services-inner:hover>.shadow-wrapper>.show-wrapper{
+    display:none ;
+}
+.services-inner:hover>.shadow-wrapper>.Hidden-wrapper{
+    display:flex ;
+    align-items: center;
+}
+.show-wrapper> p{
+    text-align: center;
+;
+}
+.show-wrapper> p > i{
+    font-size: 55px;
+    color: white
+}
+.show-wrapper> h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: gainsboro;
+}
+.Hidden-wrapper>p{
+    text-align: justify;
+    color:  antiquewhite;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 20px;
+}
+.middle-wrapper{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.middle-child-wrapper{
+    flex: 1;
+    background-color: #D8D8D8;
+}.middle-child-wrapper>span>p>i{
+     font-size: 50px;
+ }
+.middle-child-wrapper>span>p{
+    text-align: center;
+    margin-top: 23px;
+}
+
+.middle-child-wrapper>span{
+    margin-left: 200px;
+}
+.middle-child-wrapper>span>h2{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+.middle-child-wrapper>span>h4{
+    font-size: 15px;
+    text-align:left;
+    margin-left: 110px;
+    font-style:  unset;
+    font-weight: normal;
+}
+.best-rooms>h2{
+    font-family: 'Dancing Script', cursive;
+    color: darkgoldenrod;
+    font-size: 100px;
+    margin-left: 460px;
+}
+.best-rooms>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 470px;
+    margin-top: -49px;
+}
+.blog-outer{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blog-inner{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.blog-items-wrapper{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.blog-items-img-wrapper{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.i1{
+    background-image: url("https://t4.ftcdn.net/jpg/02/87/02/71/240_F_287027198_iGC1osySqycI1sF1hs1Z2MQDugW4BiAk.jpg");
+
+}
+.i2{
+    background-image: url("https://t3.ftcdn.net/jpg/00/07/67/02/240_F_7670214_Q6hPyHZ6J0Y1BDmOQi7RF6HzlNYcE54U.jpg");
+}
+.i3{
+    background-image: url("https://t4.ftcdn.net/jpg/00/14/15/07/240_F_14150707_69W44NWjFECm7BXhnPCwX79XNTOSqEGm.jpg");
+}
+.blog-desc{
+    flex: 1;
+}
+.blog-desc>h2{
+    margin-left: 80px;
+    margin-top: 10px;
+
+}
+.blog-desc>p{
+    text-align: justify;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-family: 'Alkalami', serif;
+    color:  #0F172B;
+
+}
+.book-now1:hover{
+    color:#B8860B ;
+    font-weight: bold;
+}
+.book-now1 {
+    padding: 8px 15px;
+    background: none;
+    margin: 0px 20px;
+    border: 2px solid #B8860B;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.food-wrapper{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.food-wr1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.food-wr1:first-child{
+    background-image: url("https://img.freepik.com/free-photo/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food_1150-26585.jpg?size=626&ext=jpg&ga=GA1.2.1558776660.1664949084");
+    background-size: cover;
+    background-position: center;
+}
+.food-wr1:last-child{
+    background-image: url("https://img.freepik.com/free-photo/baked-chicken-wings-asian-style_2829-10159.jpg?size=626&ext=jpg&ga=GA1.2.1558776660.1664949084");
+    background-size: cover;
+    background-position: center;
+
+}
+.shadow-food{
+    width: 100%;height: 100%;
+    background-color: rgba(15, 23, 43,0.7);
+}
+.shadow-food p{
+    margin: 150px 70px;
+    font-size: 20px;
+    color: #B8860B;
+    font-family: 'Alkalami', serif;
+
+}
+.shadow-food h2{
+
+    margin-left: 230px;
+    margin-top: 50px;
+    font-size: 50px;
+    color: #B8860B;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+    transition: ease 0.5s;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+body {
+    background: #3a4d7c;
+}
+
+footer {
+    background: #1e3161;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: #2f4374 0 10px 20px 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.heading {
+    margin-bottom: 15px;
+}
+.col1 {
+    flex: 1;
+    min-width: 200px;
+}
+.col2 {
+    flex: 2;
+    min-width: 300px;
+}
+.col3 {
+    flex: 1;
+    min-width: 200px;
+}
+
+.col1 a {
+    display: inline-block;
+    padding: 7px 0;
+    font-size: 14px;
+}
+.col1 a:hover {
+    color: #58bed5;
+}
+
+.col2 .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+}
+.col2 a {
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.col2 a:hover {
+    background: #58bed5;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+.col3 ion-icon {
+    font-size: 30px;
+}
+.social a:hover ion-icon {
+    color: #5ac1d8;
+}
+
+.terms {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+}
+.terms a {
+    color: #7783a0;
+}
+.mine-say h1{
+    margin-left: 500px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #B8860B;
+}
+.mine-say p{
+    margin-left: 500px;
+    font-size: 40px;
+    margin-top: -38px;
+    color: #0F172B;
+}
+.my-brand>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: 550px;
+
+}
